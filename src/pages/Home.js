@@ -4,7 +4,16 @@ export default function Home() {
     const navigate = useNavigate()
     return (
         <div>
-            hello
+            <header>
+                <nav>
+                   <a className="header-name">Resetin</a>
+                </nav>
+            </header>
+
+            <div>
+               <div className="lightspot-line"></div>
+               <div className="lightspot"></div>
+            </div>
         </div>
     )
 }
