@@ -25,8 +25,6 @@ export default function Home() {
                <div className="lightspot-line"></div>
                <div className="lightspot"></div>
             </div>
-
-
         </div>
     )
 }
