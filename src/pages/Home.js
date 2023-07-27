@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import '../css/Home.css';
 import { ReactComponent as ArrowIcon } from '../icons/arrow-right-long-solid.svg';
 import { ReactComponent as MainIcon } from '../icons/resetin_w.logo.svg';
-import crossplatformphone from '../photos/crossplatformphone.png';
+import mainlogo from '../icons/resetin_b.logo.svg';
 import codingtasks from '../photos/codingtasks.png';
 
 export default function Home() {
@@ -53,6 +53,10 @@ export default function Home() {
             <img className="codingtasksphone" src={codingtasks} alt="codingtasks"/>
             </div>
             <div className="separate-line"></div>
+
+            <div className="summary-main-logo-cont">
+            <img className="summary-main-logo" src={mainlogo} alt="mainlogo"/>
+            </div>
 
             <div className="summary-intro-cont">
                 <p>

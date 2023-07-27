@@ -125,6 +125,22 @@ header {
     margin-bottom: 80px;
   }
 
+  .summary-main-logo-cont {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: rgb(255, 255, 255);
+    width: 60px;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .summary-main-logo {
+    width: 60px;  
+  }
+
 
 
   /*codingtasks*/
