@@ -3,6 +3,7 @@ import '../css/Home.css';
 import { ReactComponent as ArrowIcon } from '../icons/arrow-right-long-solid.svg';
 import { ReactComponent as MainIcon } from '../icons/resetin_w.logo.svg';
 import crossplatformphone from '../photos/crossplatformphone.png';
+import codingtasks from '../photos/codingtasks.png';
 
 export default function Home() {
     const navigate = useNavigate()
@@ -37,6 +38,22 @@ export default function Home() {
                <div className="lightspot"></div>
             </div>
 
+            <div className="codingtasks-text">
+                <h3>
+                    Tasks
+                </h3>
+                <p>
+                    Coding tasks
+                </p>
+                <h4>
+                    Organize your daily coding tasks and projects, use our custom emojis to make it even more appealing.
+                </h4>
+            </div>
+            <div className="codingtasks-cont">
+            <img className="codingtasksphone" src={codingtasks} alt="codingtasks"/>
+            </div>
+            <div className="separate-line"></div>
+
             <div className="crossplatform-text">
                 <h3>
                     cross-platform
@@ -48,11 +65,9 @@ export default function Home() {
                     Organize your daily tasks in any device.
                 </h4>
             </div>
-
             <div className="crossplatform-cont">
             <img className="crossplatformphone" src={crossplatformphone} alt="crossplatformphone"/>
             </div>
-
             <div className="separate-line"></div>
 
             <button className="get-started-btn" onClick={() => navigate('waitlist')}>

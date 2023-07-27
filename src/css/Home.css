@@ -42,19 +42,16 @@ header {
     border-bottom: 1px solid rgb(28, 28, 28);
     z-index: 1;
   }
-  
   header .header-name{
     position: relative;
     font-size: 22px;
     text-decoration: none;
     color: white;
   }
-
   .header-container {
     display: flex;
     align-items: center;
   }
-
   .header-main-logo {
     width: 30px;
     height: 30px;
@@ -79,16 +76,13 @@ header {
     justify-content: center;
     margin-bottom: 15px;
   }
-
   .get-started-btn-text {
     font-size: 20px;
     font-weight: 500;
   }
-
   .get-started-btn:hover {
     background-color: rgb(236, 236, 236);
   }
-
   .get-started-btn-icon {
     width: 21px;
     margin-left: 15px;
@@ -112,13 +106,54 @@ header {
     margin-right: 30px;
     margin-bottom: 30px;
   }
-  
+
+
+
+  /*codingtasks*/
+  .codingtasks-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .codingtasksphone {
+    width: 370px;
+  }
+  .codingtasks-text h3 {
+    color: white;
+    margin-left: 30px;
+    font-weight: 400;
+  }
+  .codingtasks-text p {
+    background: linear-gradient(90deg, #ffffff, #a4a4a4);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .codingtasks-text h4 {
+    color: #969696;
+    margin-left: 30px;
+    font-weight: 400;
+  }
+
+
+
+  /*crossplatform*/
+  .crossplatform-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .crossplatformphone {
+    width: 370px;
+  }
   .crossplatform-text h3 {
     color: white;
     margin-left: 30px;
     font-weight: 400;
   }
-
   .crossplatform-text p {
     background: linear-gradient(90deg, #ffffff, #a4a4a4);
     -webkit-background-clip: text;
@@ -128,17 +163,6 @@ header {
     font-size: 25px;
     font-weight: 700;
   }
-
-  .crossplatform-cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .crossplatformphone {
-    width: 370px;
-  }
-
   .crossplatform-text h4 {
     color: #969696;
     margin-left: 30px;
