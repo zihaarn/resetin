@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import '../css/Home.css';
 import { ReactComponent as ArrowIcon } from '../icons/arrow-right-long-solid.svg';
 import { ReactComponent as MainIcon } from '../icons/resetin_w.logo.svg';
+import crossplatformphone from '../photos/crossplatformphone.png';
 
 export default function Home() {
     const navigate = useNavigate()
@@ -36,6 +37,23 @@ export default function Home() {
                <div className="lightspot"></div>
             </div>
 
+            <div className="crossplatform-text">
+                <h3>
+                    cross-platform
+                </h3>
+                <p>
+                    Available on desktop, mobile and your browser.
+                </p>
+                <h4>
+                    Organize your daily tasks in any device.
+                </h4>
+            </div>
+
+            <div className="crossplatform-cont">
+            <img className="crossplatformphone" src={crossplatformphone} alt="crossplatformphone"/>
+            </div>
+
+            <div className="separate-line"></div>
 
             <button className="get-started-btn" onClick={() => navigate('waitlist')}>
                 <span className="get-started-btn-text">Get Started</span>
@@ -52,9 +70,29 @@ export default function Home() {
                     <p>Legal</p>
                     <div className="legal-links">
                     <a href="#">Privacy Policy</a>
-                    <a href="#">Terms</a>
+                    <a href="#">Terms of Services</a>
                     </div>
                 </div>
+
+                <div className="Company-div">
+                    <p>Company</p>
+                    <div className="Company-links">
+                    <a href="#">Contact</a>
+                    <a href="#">About</a>
+                    <a href="#">Brand</a>
+                    </div>
+                </div>
+
+                <div className="Guides-div">
+                    <p>Guides</p>
+                    <div className="Guides-links">
+                    <a href="#">Discord</a>
+                    <a href="#">FAQ</a>
+                    </div>
+                </div>
+                <p className="rights-reserved">
+                © 2023 Resetin. All rights reserved.
+                </p>
             </section>
         </div>
     )

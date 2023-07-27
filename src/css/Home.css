@@ -20,6 +20,13 @@ body {
   background: radial-gradient(ellipse at top center, rgba(33, 33, 33, 0.9), black 60%, transparent);
 }
 
+.separate-line {
+  height: 1px;
+  width: 100%;
+  background-color: #393939;
+  margin-bottom: 30px;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -29,7 +36,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-left: 30px;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .3);
     height: 52px;
     backdrop-filter: blur(6px);
     border-bottom: 1px solid rgb(28, 28, 28);
@@ -105,10 +112,46 @@ header {
     margin-right: 30px;
     margin-bottom: 30px;
   }
+  
+  .crossplatform-text h3 {
+    color: white;
+    margin-left: 30px;
+    font-weight: 400;
+  }
 
+  .crossplatform-text p {
+    background: linear-gradient(90deg, #ffffff, #a4a4a4);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .crossplatform-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .crossplatformphone {
+    width: 370px;
+  }
+
+  .crossplatform-text h4 {
+    color: #969696;
+    margin-left: 30px;
+    font-weight: 400;
+  }
+
+  
+
+  /*footer*/
   .footer-cont {
-    height: 200px;
+    height: 550px;
     width: 100%;
+    background-color: rgb(0, 0, 0);
   }
 
   .legal-div {
@@ -116,20 +159,78 @@ header {
     display: flex;
     flex-direction: column;
   }
-
   .legal-links {
     display: flex;
     flex-direction: column;
   }
-
   .legal-div p {
     color: white;
     font-weight: 500;
   }
-
   .legal-div a {
     color: #969696;
     text-decoration: none;
     margin-top: 10px;
     font-weight: 500;
+    transition: .5s;
+  }
+  .legal-div a:hover {
+    color: white;
+  }
+
+  .Company-div {
+    margin-left: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Company-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .Company-div p {
+    color: white;
+    font-weight: 500;
+  }
+  .Company-div a {
+    color: #969696;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: .5s;
+  }
+  .Company-div a:hover {
+    color: white;
+  }
+
+  .Guides-div {
+    margin-left: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .Guides-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .Guides-div p {
+    color: white;
+    font-weight: 500;
+  }
+  .Guides-div a {
+    color: #969696;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: .5s;
+  }
+  .Guides-div a:hover {
+    color: white;
+  }
+
+  .rights-reserved {
+    color: #4b4b4b;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 40px;
   }
