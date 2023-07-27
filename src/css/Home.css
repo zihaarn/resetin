@@ -107,6 +107,24 @@ header {
     margin-bottom: 30px;
   }
 
+  .summary-intro-cont p {
+    background: linear-gradient(90deg, #ffffff, #a4a4a4);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .summary-intro-cont h4 {
+    color: #969696;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: 400;
+    margin-bottom: 80px;
+  }
+
 
 
   /*codingtasks*/
@@ -136,40 +154,10 @@ header {
     color: #969696;
     margin-left: 30px;
     font-weight: 400;
-  }
-
-
-
-  /*crossplatform*/
-  .crossplatform-cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .crossplatformphone {
-    width: 370px;
-  }
-  .crossplatform-text h3 {
-    color: white;
-    margin-left: 30px;
-    font-weight: 400;
-  }
-  .crossplatform-text p {
-    background: linear-gradient(90deg, #ffffff, #a4a4a4);
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-left: 30px;
     margin-right: 30px;
-    font-size: 25px;
-    font-weight: 700;
-  }
-  .crossplatform-text h4 {
-    color: #969696;
-    margin-left: 30px;
-    font-weight: 400;
   }
 
-  
+
 
   /*footer*/
   .footer-cont {

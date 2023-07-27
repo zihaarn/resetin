@@ -19,7 +19,7 @@ export default function Home() {
             </header>
 
             <p className="starting-heading">
-            Streamline Your Coding Productivity Today!
+               Streamline Your Coding Productivity Today!
             </p>
 
             <p className="starting-intro">
@@ -40,7 +40,7 @@ export default function Home() {
 
             <div className="codingtasks-text">
                 <h3>
-                    Tasks
+                    Catalog
                 </h3>
                 <p>
                     Coding tasks
@@ -54,21 +54,14 @@ export default function Home() {
             </div>
             <div className="separate-line"></div>
 
-            <div className="crossplatform-text">
-                <h3>
-                    cross-platform
-                </h3>
+            <div className="summary-intro-cont">
                 <p>
-                    Available on desktop, mobile and your browser.
+                    A vital tool for your developers team.
                 </p>
                 <h4>
-                    Organize your daily tasks in any device.
+                    Say goodbye to your crawling channels, and say hello to a user-friendly tool that helps you to organize your coding projects and be more productive.
                 </h4>
             </div>
-            <div className="crossplatform-cont">
-            <img className="crossplatformphone" src={crossplatformphone} alt="crossplatformphone"/>
-            </div>
-            <div className="separate-line"></div>
 
             <button className="get-started-btn" onClick={() => navigate('waitlist')}>
                 <span className="get-started-btn-text">Get Started</span>
