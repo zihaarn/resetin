@@ -19,7 +19,7 @@ export default function Home() {
             </header>
 
             <p className="starting-heading">
-               Streamline Your Coding Productivity Today!
+            Streamline Your Coding Productivity Today with the Power of AI!
             </p>
 
             <p className="starting-intro">
@@ -63,7 +63,7 @@ export default function Home() {
                     A vital tool for your developers team.
                 </p>
                 <h4>
-                    Say goodbye to your crawling channels, and say hello to a user-friendly tool that helps you to organize your coding projects and be more productive.
+                    Say goodbye to your crawling channels, and say hello to a user-friendly AI tool that helps you to organize your coding projects and be more productive.
                 </h4>
             </div>
 
@@ -91,7 +91,6 @@ export default function Home() {
                     <div className="Company-links">
                     <a href="#">Contact</a>
                     <a href="#">About</a>
-                    <a href="#">Brand</a>
                     </div>
                 </div>
 
