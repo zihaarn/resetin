@@ -18,11 +18,11 @@ export default function Home() {
                 </nav>
             </header>
 
-            <p className="starting-heading">
-               Streamline Your Coding Productivity Today with Us!
+            <p className="starting-title">
+               Streamline Your Coding Productivity Today!
             </p>
 
-            <p className="starting-intro">
+            <p className="starting-subtitle">
                 Elevate your life and productivity. 
                 Cultivate positive habits with our comprehensive platform,
                 empowering routines for fulfillment.
@@ -81,24 +81,24 @@ export default function Home() {
                 <div className="legal-div">
                     <p>Legal</p>
                     <div className="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Services</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Services</a>
                     </div>
                 </div>
 
                 <div className="Company-div">
                     <p>Company</p>
                     <div className="Company-links">
-                    <a href="#">Contact</a>
-                    <a href="#">About</a>
+                    <a href="">Contact</a>
+                    <a href="">About</a>
                     </div>
                 </div>
 
                 <div className="Guides-div">
                     <p>Guides</p>
                     <div className="Guides-links">
-                    <a href="#">Discord</a>
-                    <a href="#">FAQ</a>
+                    <a href="">Discord</a>
+                    <a href="">FAQ</a>
                     </div>
                 </div>
                 <p className="rights-reserved">
