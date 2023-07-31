@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 import '../css/Home.css';
 import { ReactComponent as ArrowIcon } from '../icons/arrow-right-long-solid.svg';
 import { ReactComponent as MainIcon } from '../icons/resetin_w.logo.svg';
@@ -7,7 +8,37 @@ import mainlogo from '../icons/resetin_b.logo.svg';
 import codingtasks from '../photos/codingtasks.png';
 
 export default function Home() {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+
+    //scrolling animation
+    useEffect(() => {
+        const elementsToAnimate = document.querySelectorAll(".scroll-animation");
+    
+        const observerOptions = {
+          root: null,
+          rootMargin: "0px",
+          threshold: 0.2,
+        };
+    
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+    
+        elementsToAnimate.forEach((element) => {
+          observer.observe(element);
+        });
+    
+        return () => {
+          observer.disconnect();
+        };
+      }, []);
+
+
     return (
         <div>
             <header>
@@ -60,7 +91,7 @@ export default function Home() {
             <img className="summary-main-logo" src={mainlogo} alt="mainlogo"/>
             </div>
 
-            <div className="summary-intro-cont">
+            <div className="summary-intro-cont scroll-animation">
                 <p>
                     A vital tool for your developers team.
                 </p>
@@ -69,8 +100,8 @@ export default function Home() {
                 </h4>
             </div>
 
-            <button className="get-started-btn" onClick={() => navigate('waitlist')}>
-                <span className="get-started-btn-text">Get Started</span>
+            <button className="get-started-btn scroll-animation" onClick={() => navigate('waitlist')}>
+                <span className="get-started-btn-text">Join Waitlist</span>
                 <ArrowIcon className="get-started-btn-icon" />
             </button>
 

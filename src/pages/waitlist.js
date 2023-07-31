@@ -42,7 +42,8 @@ const TelegramForm = () => {
           className="waitlist-email-input"
         />
       <button type="submit"
-              className='waitlist-email-input-submit-button'>Join Waitlist
+              className='waitlist-email-input-submit-button'>
+                <span className='join-waitlist-btn-text'>Join Waitlist</span>
               <ArrowIcon className="join-waitlist-btn-icon" />
       </button>
       console.log('Your email successfully sent');
@@ -61,6 +62,9 @@ export default function Waitlist() {
 
   return (
     <div>
+      <h3 className='waitlist-early-access-text'>
+        Join the waitlist for early access.
+      </h3>
       <TelegramForm onSubmit={handleFormSubmit} />
     </div>
   );
