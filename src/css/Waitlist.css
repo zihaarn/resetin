@@ -1,0 +1,48 @@
+.waitlist-form-cont {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.waitlist-email-input {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-top: 100px;
+    outline: none;
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 17px;
+    background-color: black;
+    height: 20px;
+    width: 300px;
+    color: white;
+    font-size: 15px;
+}
+
+.waitlist-email-input-submit-button {
+    background-color: white;
+    margin-top: 20px;
+    width: 340px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    outline: none;
+    border: none;
+    border-radius: 17px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.waitlist-email-input-submit-button:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+.join-waitlist-btn-icon {
+    width: 21px;
+    margin-left: 190px;
+}

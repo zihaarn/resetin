@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import '../css/Home.css';
 import { ReactComponent as ArrowIcon } from '../icons/arrow-right-long-solid.svg';
 import { ReactComponent as MainIcon } from '../icons/resetin_w.logo.svg';
+import { ReactComponent as OrderIcon} from '../icons/order.svg';
 import mainlogo from '../icons/resetin_b.logo.svg';
 import codingtasks from '../photos/codingtasks.png';
 
@@ -29,7 +30,7 @@ export default function Home() {
             </p>
 
             <button className="get-started-btn" onClick={() => navigate('waitlist')}>
-                <span className="get-started-btn-text">Get Started</span>
+                <span className="get-started-btn-text">Join Waitlist</span>
                 <ArrowIcon className="get-started-btn-icon" />
             </button>
 
@@ -40,7 +41,8 @@ export default function Home() {
 
             <div className="codingtasks-text">
                 <h3>
-                    Catalog
+                   <OrderIcon className="order-icon" />
+                    Order
                 </h3>
                 <p>
                     Coding tasks
