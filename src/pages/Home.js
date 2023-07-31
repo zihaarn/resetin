@@ -4,8 +4,10 @@ import '../css/Home.css';
 import { ReactComponent as ArrowIcon } from '../icons/arrow-right-long-solid.svg';
 import { ReactComponent as MainIcon } from '../icons/resetin_w.logo.svg';
 import { ReactComponent as OrderIcon} from '../icons/order.svg';
+import { ReactComponent as TeamIcon } from '../icons/team.svg';
 import mainlogo from '../icons/resetin_b.logo.svg';
 import codingtasks from '../photos/codingtasks.png';
+import collaborate from '../photos/collaborate.png';
 
 export default function Home() {
     const navigate = useNavigate();
@@ -69,7 +71,8 @@ export default function Home() {
                <div className="lightspot-line"></div>
                <div className="lightspot"></div>
             </div>
-
+            
+            //coding tasks
             <div className="codingtasks-text">
                 <h3>
                    <OrderIcon className="order-icon" />
@@ -83,10 +86,30 @@ export default function Home() {
                 </h4>
             </div>
             <div className="codingtasks-cont">
-            <img className="codingtasksphone" src={codingtasks} alt="codingtasks"/>
+            <img className="codingtasksphone" src={codingtasks} alt="collaborate"/>
             </div>
             <div className="separate-line"></div>
 
+            //collaborate
+            <div className="collaborate-text scroll-animation">
+                <h3>
+                   <TeamIcon className="team-icon" />
+                    Collaborate
+                </h3>
+                <p>
+                    Developers Teams
+                </p>
+                <h4>
+                    Arrange meetings and Organize team tasks in one place!
+                </h4>
+            </div>
+            <div className="collaborate-cont scroll-animation">
+            <img className="collaboratephone scroll-animation" src={collaborate} alt="codingtasks"/>
+            </div>
+            <div className="separate-line"></div>
+
+
+            //summary logo and text
             <div className="summary-main-logo-cont">
             <img className="summary-main-logo" src={mainlogo} alt="mainlogo"/>
             </div>
@@ -105,6 +128,8 @@ export default function Home() {
                 <ArrowIcon className="get-started-btn-icon" />
             </button>
 
+
+            //footer
             <div>
                <div className="lightspot-line"></div>
                <div className="lightspot"></div>
