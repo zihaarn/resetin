@@ -18,8 +18,8 @@ export default function Home() {
     
         const observerOptions = {
           root: null,
-          rootMargin: "0px",
-          threshold: 0.2,
+          rootMargin: "-100px",
+          threshold: 0.1,
         };
     
         const observer = new IntersectionObserver((entries, observer) => {
@@ -57,9 +57,9 @@ export default function Home() {
             </p>
 
             <p className="starting-subtitle">
-                Elevate your life and productivity. 
-                Cultivate positive habits with our comprehensive platform,
-                empowering routines for fulfillment.
+            Unveil the possibilities with our Resetin developer platform! 
+            Seamlessly organize projects, collaborate within groups, and focus on building remarkable projects together. 
+            Simplifying your development journey is our mission!
             </p>
 
             <button className="get-started-btn" onClick={() => navigate('waitlist')}>
@@ -82,7 +82,7 @@ export default function Home() {
                     Coding tasks
                 </p>
                 <h4>
-                    Organize your daily coding tasks and projects, use our custom emojis to make it even more appealing.
+                Organize your coding tasks and enhance projects with our custom emojis!
                 </h4>
             </div>
             <div className="codingtasks-cont">
@@ -100,11 +100,11 @@ export default function Home() {
                     Developers Teams
                 </p>
                 <h4>
-                    Arrange meetings and Organize team tasks in one place!
+                    Efficiently manage meetings and streamline team tasks, all in a unified platform!
                 </h4>
             </div>
-            <div className="collaborate-cont scroll-animation">
-            <img className="collaboratephone scroll-animation" src={collaborate} alt="codingtasks"/>
+            <div className="collaborate-cont">
+            <img className="collaboratephone" src={collaborate} alt="codingtasks"/>
             </div>
             <div className="separate-line"></div>
 
@@ -119,7 +119,7 @@ export default function Home() {
                     A vital tool for your developers team.
                 </p>
                 <h4>
-                    Say goodbye to your crawling channels, and say hello to a user-friendly tool that helps you to organize your coding projects and be more productive.
+                    Leave behind the complexities of traditional workflows and embrace a user-friendly tool that elevates your coding projects' organization and boosts productivity.
                 </h4>
             </div>
 
