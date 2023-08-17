@@ -13,7 +13,6 @@ const TelegramForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Replace 'YOUR_BOT_TOKEN' and 'YOUR_CHAT_ID' with your actual token and chat ID
     const telegramBotAPI = `https://api.telegram.org/bot6323443419:AAGQU55KpW1R2tSS1oCzvXg9UYJspxqhsyQ/sendMessage`;
     const chatID = '-1001930637343';
     const message = `New email submitted: ${email}`;
@@ -24,7 +23,6 @@ const TelegramForm = () => {
     })
     .then((response) => {
       console.log('Message sent successfully:', response.data);
-      // Reset the input field after successful submission
       setEmail('');
     })
     .catch((error) => {

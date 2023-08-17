@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import React, { useEffect } from "react";
 import '../css/Home.css';
 import { ReactComponent as ArrowIcon } from '../icons/arrow-right-long-solid.svg';
 import { ReactComponent as MainIcon } from '../icons/resetin_w.logo.svg';
@@ -11,38 +10,9 @@ import collaborate from '../photos/collaborate.png';
 
 export default function Home() {
     const navigate = useNavigate();
-
-    //scrolling animation
-    useEffect(() => {
-        const elementsToAnimate = document.querySelectorAll(".scroll-animation");
-    
-        const observerOptions = {
-          root: null,
-          rootMargin: "-100px",
-          threshold: 0.1,
-        };
-    
-        const observer = new IntersectionObserver((entries, observer) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("animate");
-              observer.unobserve(entry.target);
-            }
-          });
-        }, observerOptions);
-    
-        elementsToAnimate.forEach((element) => {
-          observer.observe(element);
-        });
-    
-        return () => {
-          observer.disconnect();
-        };
-      }, []);
-
-
     return (
         <div>
+            //header
             <header>
                 <nav>
                    <div className="header-container">
@@ -51,28 +21,28 @@ export default function Home() {
                    </div>
                 </nav>
             </header>
-
+            //main title
             <p className="starting-title">
                Streamline Your Coding Productivity Today!
             </p>
-
+            
             <p className="starting-subtitle">
-            Unveil the possibilities with our Resetin developer platform! 
-            Seamlessly organize projects, collaborate within groups, and focus on building remarkable projects together. 
-            Simplifying your development journey is our mission!
+               Unveil the possibilities with our Resetin developer platform! 
+               Seamlessly organize projects, collaborate within groups, and focus on building remarkable projects together. 
+               Simplifying your development journey is our mission!
             </p>
-
+            
             <button className="get-started-btn" onClick={() => navigate('waitlist')}>
                 <span className="get-started-btn-text">Join Waitlist</span>
                 <ArrowIcon className="get-started-btn-icon" />
             </button>
-
+            //lightspot
             <div>
                <div className="lightspot-line"></div>
                <div className="lightspot"></div>
             </div>
+
             
-            //coding tasks
             <div className="codingtasks-text">
                 <h3>
                    <OrderIcon className="order-icon" />
@@ -85,13 +55,13 @@ export default function Home() {
                 Organize your coding tasks and enhance projects with our custom emojis!
                 </h4>
             </div>
-            <div className="codingtasks-cont">
-            <img className="codingtasksphone" src={codingtasks} alt="collaborate"/>
+              <div className="codingtasks-cont">
+              <img className="codingtasksphone" src={codingtasks} alt="collaborate"/>
             </div>
             <div className="separate-line"></div>
 
-            //collaborate
-            <div className="collaborate-text scroll-animation">
+            
+            <div className="collaborate-text">
                 <h3>
                    <TeamIcon className="team-icon" />
                     Collaborate
@@ -103,18 +73,18 @@ export default function Home() {
                     Efficiently manage meetings and streamline team tasks, all in a unified platform!
                 </h4>
             </div>
-            <div className="collaborate-cont">
-            <img className="collaboratephone" src={collaborate} alt="codingtasks"/>
+              <div className="collaborate-cont">
+              <img className="collaboratephone" src={collaborate} alt="codingtasks"/>
             </div>
             <div className="separate-line"></div>
 
 
-            //summary logo and text
+            
             <div className="summary-main-logo-cont">
-            <img className="summary-main-logo" src={mainlogo} alt="mainlogo"/>
+              <img className="summary-main-logo" src={mainlogo} alt="mainlogo"/>
             </div>
 
-            <div className="summary-intro-cont scroll-animation">
+            <div className="summary-intro-cont">
                 <p>
                     A vital tool for your developers team.
                 </p>
@@ -123,11 +93,10 @@ export default function Home() {
                 </h4>
             </div>
 
-            <button className="get-started-btn scroll-animation" onClick={() => navigate('waitlist')}>
+            <button className="get-started-btn" onClick={() => navigate('waitlist')}>
                 <span className="get-started-btn-text">Join Waitlist</span>
                 <ArrowIcon className="get-started-btn-icon" />
             </button>
-
 
             //footer
             <div>
