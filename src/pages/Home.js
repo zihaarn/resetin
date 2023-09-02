@@ -77,7 +77,7 @@ export default function Home() {
                     Collaborate
                 </h3>
                 <p>
-                    Developers Teams
+                    Developer Teams
                 </p>
                 <h4>
                     Efficiently manage meetings and streamline team tasks, all in a unified platform!
