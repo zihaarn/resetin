@@ -23,7 +23,7 @@ export default function Home() {
             </header>
             //main title
             <p className="starting-title">
-               Streamline Your Coding Productivity Today!
+               Streamline Your Coding Productivity Today!.
             </p>
             
             <p className="starting-subtitle">
