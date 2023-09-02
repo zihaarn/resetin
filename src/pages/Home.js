@@ -12,7 +12,13 @@ export default function Home() {
     const navigate = useNavigate();
     return (
         <div>
-            //header
+            <div className="coming-soon-div">
+                <p>
+                    Coming soon
+                </p>
+            </div>
+
+            {/*Header*/}
             <header>
                 <nav>
                    <div className="header-container">
@@ -21,28 +27,32 @@ export default function Home() {
                    </div>
                 </nav>
             </header>
-            //main title
+
+            {/*Heading*/}
             <p className="starting-title">
-               Streamline Your Coding Productivity Today!.
+               Streamline Your Coding Productivity Today!
             </p>
             
+            {/*Subtitile*/}
             <p className="starting-subtitle">
                Unveil the possibilities with our Resetin developer platform! 
                Seamlessly organize projects, collaborate within groups, and focus on building remarkable projects together. 
                Simplifying your development journey is our mission!
             </p>
             
+            {/*Get started button*/}
             <button className="get-started-btn" onClick={() => navigate('waitlist')}>
                 <span className="get-started-btn-text">Join Waitlist</span>
                 <ArrowIcon className="get-started-btn-icon" />
             </button>
-            //lightspot
+
+            {/*Lightspot break*/}
             <div>
                <div className="lightspot-line"></div>
                <div className="lightspot"></div>
             </div>
 
-            
+            {/*Coding tasks phone*/}
             <div className="codingtasks-text">
                 <h3>
                    <OrderIcon className="order-icon" />
@@ -60,7 +70,7 @@ export default function Home() {
             </div>
             <div className="separate-line"></div>
 
-            
+            {/*Collaborate phone*/}
             <div className="collaborate-text">
                 <h3>
                    <TeamIcon className="team-icon" />
@@ -78,12 +88,12 @@ export default function Home() {
             </div>
             <div className="separate-line"></div>
 
-
-            
+            {/*Summary logo*/}
             <div className="summary-main-logo-cont">
               <img className="summary-main-logo" src={mainlogo} alt="mainlogo"/>
             </div>
 
+            {/*summary introduction*/}
             <div className="summary-intro-cont">
                 <p>
                     A vital tool for your developers team.
@@ -93,17 +103,19 @@ export default function Home() {
                 </h4>
             </div>
 
+            {/*Get strted button 2nd*/}
             <button className="get-started-btn" onClick={() => navigate('waitlist')}>
                 <span className="get-started-btn-text">Join Waitlist</span>
                 <ArrowIcon className="get-started-btn-icon" />
             </button>
 
-            //footer
+            {/*Lightspot break*/}
             <div>
                <div className="lightspot-line"></div>
                <div className="lightspot"></div>
             </div>
 
+            {/*Footer*/}
             <section className="footer-cont">
                 <div className="legal-div">
                     <p>Legal</p>
