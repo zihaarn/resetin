@@ -13,8 +13,8 @@ const TelegramForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const telegramBotAPI = `https://api.telegram.org/bot6323443419:AAGQU55KpW1R2tSS1oCzvXg9UYJspxqhsyQ/sendMessage`;
-    const chatID = '-1001930637343';
+    const telegramBotAPI = `https://api.telegram.org/{/*THE API KEY*/}/sendMessage`;
+    const chatID = 'chatid';
     const message = `New email submitted: ${email}`;
 
     axios.post(telegramBotAPI, {
@@ -53,8 +53,6 @@ export default function Waitlist() {
   const navigate = useNavigate();
 
   const handleFormSubmit = () => {
-    // Handle any additional actions after form submission
-    // For example, redirect to another page using navigate('/')
     navigate('/');
   };
 
